@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = 12;
+			function fn(){
+				alert(a)   // undefind
+				var a = 12;
+				/*上面代码相当于
+				 * var a;
+				 * alert(a);
+				 * a = 12;
+				 */
+			}
+			for(let i = 0;i<10;i++){
+				console.log(i)
+			}
+			alert(i)//i is not defined
+			
+			
+			
+			//块级作用域
+			{
+				let = 12;
+				{
+					let a  = 5;
+					console.log(a)//5
+				}
+				console.log(a)//12
+			}
+			
+			
+			var arr = [];
+			for(var i = 0;i<10;i++){
+				arr[i] = function(){
+					console.log(i)
+				}
+			}
+			arr[5]()
+			
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		let [a,b,c] = [12,5,6];
+		
+		console.log(a,b,c)
+		
+		let json = {
+			name:'tom',
+			age:18,
+			job:'code'
+		}
+		let {name,age,job} = json;
+		console.log(name,age,job)
+		
+		let {name,age,job:a} = json;
+		console.log(name,age,a)
+	</body>
+</html>
